@@ -354,6 +354,55 @@
                     }
                 },
                 {
+                    "contentId": "portfolio-site-v2",
+                    "contentUrl": "/projects/detail/portfolio-site-v2",
+                    "navigationItemMetadata": {
+                        "imageSource": "assets/img/portfolio_site_v2_logo.PNG",
+                        "imageAlt" : "portfolio_site_v2",
+                        "headerTitle" : "Personal Site Revamp v2",
+                        "hoverTitle": "Personal Site Revamp v2"
+                    },
+                    "contentData": {
+                        "pageTitle" : "Personal Site Revamp v2",
+                        "projectDate": "August 2020",
+                        "projectURL": "https://daviddev21.github.io/portfolioSite-v2/",
+                        "projectSourceURL" : "https://github.com/DavidDev21/portfolioSite-v2/",
+                        "mimeContent" : {
+                            "assetSource" : "assets/img/portfolio_site_v2_logo.PNG",
+                            "assetAlt" : "portfolio site v2",
+                            "assetType" : "image"
+                        },
+                        "description" : ["This is the second revamp project my personal site using Angular. This was an learning experience to try to understand Angular for my current work environment. Although I do not use Angular in a professional capacity, learning the tools of my colleagues help me better understand their struggles and help me bridge the gap between the backend and frontend developers. This also marks current progress and growth of me as a developer after a year of working in a professional capacity.",
+                                        "",
+                                        "Note: the result of the revamp is what you are seeing right now."],
+                        "accomplishmentList" : [
+                        ],
+                        "toolList" : [
+                            {
+                                "imageSource" : "assets/img/angular_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/html_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/css_logo.jpg",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/typescript_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/git_logo.png",
+                                "alt" : "an Image"
+                            }
+                        ],
+                        "toolsPerRow": 4
+                    }
+                },
+                {
                     "contentId": "portfolio-site-v1",
                     "contentUrl": "/projects/detail/portfolio-site-v1",
                     "navigationItemMetadata": {

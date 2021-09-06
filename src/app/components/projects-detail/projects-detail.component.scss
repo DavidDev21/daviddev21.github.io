@@ -33,3 +33,14 @@
     max-width: 200px;
     max-height: 125px;
 }
+
+@media screen and (min-width: 1440px) {
+
+    .project-logo {
+        max-width: 750px;
+    }
+
+    .project-video {
+        max-width: 800px;
+    }
+}

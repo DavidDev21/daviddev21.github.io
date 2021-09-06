@@ -30,8 +30,8 @@
         <div class="row mb-3">
             <h4>About this project</h4>
             <p><strong>Project Date: </strong> {{ contentData.projectDate }}</p>
-            <p *ngIf="contentData.projectURL"><strong>Project URL: </strong> <a target="_blank" href="{{ contentData.projectURL }}">{{ contentData.projectURL }}</a></p>
-            <p *ngIf="contentData.projectSourceURL"><strong>Project Source URL: </strong> <a target="_blank" href="{{ contentData.projectSourceURL }}">{{ contentData.projectSourceURL }}</a></p>
+            <p *ngIf="contentData.projectURL"><strong>Project URL: </strong> <a class="bg-black" target="_blank" href="{{ contentData.projectURL }}">{{ contentData.projectURL }}</a></p>
+            <p *ngIf="contentData.projectSourceURL"><strong>Project Source URL: </strong> <a class="bg-black" target="_blank" href="{{ contentData.projectSourceURL }}">{{ contentData.projectSourceURL }}</a></p>
             <p [innerText] = "description"></p>
         </div>
         
