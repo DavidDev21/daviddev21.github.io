@@ -1,0 +1,46 @@
+
+<app-page-control *ngIf="pageData.pageControl !== undefined" 
+                    prevRoute="{{ pageData.pageControl.prevRoute }}" 
+                    prevRouteText="{{ pageData.pageControl.prevRouteText }}" ></app-page-control>
+
+<div>
+    <video autoplay loop muted class="video-container">
+        <source src="assets/typing_bg_video.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div  *ngIf="contentData !== undefined" class="contact-container">
+    <div class="contact-header mb-3 p-2">
+        <h1 class="click-banner" *ngIf="hasUserClicked === false">Click anywhere!</h1>
+        <h2 *ngIf="headerText" class="test-text" [innerText]="headerText"></h2>
+    </div>
+
+    <div [class.show-visible]= "isNavigationVisible" class="contact-body p-2">
+        <div class="contact-nav-list">
+            <div class="contact-nav-item">
+                <a class="btn_hover github" target="_blank" href="https://github.com/DavidDev21" title="Check out my Github">
+                Github <i class="fab fa-2x fa-github"></i>
+                </a>                
+            </div>
+            <div class="contact-nav-item">
+                <a class="btn_hover linkedin" target="_blank" href="https://www.linkedin.com/in/david-zheng-977746b2/" title="Connect me on LinkedIn">
+                    Linkedin <i class="fab fa-2x fa-linkedin-in"></i>
+                </a>        
+            </div>
+            <div class="contact-nav-item">
+                <a class="btn_hover email" target="_blank" href="mailto:david.zheng@nyu.edu" title="Contact me">
+                    Email <i class="far fa-2x fa-envelope"></i>
+                </a>            
+            </div>
+            <div class="contact-nav-item">
+                <a class="btn_hover download" target="_blank" href="assets/David_Zheng_Resume_Clean.pdf" title="Download resume" download="David Zheng Resume">
+                    Resume <i class="fas fa-2x fa-download"></i>
+                </a>              
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div class="contact-footer">
+        <button (click)="showContactNavigation()">Click me</button>
+    </div> -->
+</div>

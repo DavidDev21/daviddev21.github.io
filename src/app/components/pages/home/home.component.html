@@ -1,0 +1,34 @@
+<div>
+    <app-social-bar></app-social-bar>
+    <app-page-control *ngIf="pageData !== undefined && pageData.pageControl !== undefined"  
+    nextRoute="{{ pageData.pageControl.nextRoute }}" 
+    nextRouteText="{{ pageData.pageControl.nextRouteText }}"></app-page-control>
+</div>
+<div *ngIf="contentData !== undefined && contentData.profileImg !== undefined" class="container">
+
+    <!-- Header with profile pic -->
+    <div class="header-section">
+        <img class="profile-img" src="{{ contentData.profileImg.imageSource }}" alt="{{ contentData.profileImg.imageAlt }}">
+    </div>
+    <!-- Content body -->
+    <div class="body-section">
+        <h3 class="mb-3">{{ contentData.headerText }}</h3>
+        <div class="summary-body">
+            <p [innerText]="summaryText"></p>
+            <div class="mt-3">
+                <h5>Coursework</h5>
+                <ul class="course-list row">
+                    <li *ngFor="let course of contentData.courses; let i = index" class="col-sm-12 col-lg-6 col-xl-3">{{ course }}</li>
+                </ul>
+            </div>
+            <div class="mt-3">
+                <h5>General Skills / Toolset</h5>
+                <ul class="skill-list row">
+                    <li *ngFor="let skill of contentData.skills; let i = index" class="col-sm-12 col-lg-6 col-xl-3">{{ skill }}</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+  </div>

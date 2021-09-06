@@ -1,0 +1,84 @@
+<div>
+    <!-- <app-page-control prevRoute="/experiences" prevRouteText="Back"></app-page-control> -->
+    <app-page-control prevRoute="{{ returnUrl }}" prevRouteText="Back"></app-page-control>
+</div>
+<div *ngIf="contentData !== undefined && contentData.mimeContent !== undefined" class="container">
+    <div class="header-section mb-4">
+        <div>
+            <h3>{{ contentData.pageTitle }}</h3>
+        </div>
+    </div>
+    <div class="company-image-container mb-4">
+        <!-- <img class="company-logo" src="assets/img/bank-of-new-york-mellon-logo.png" alt="Company Picture"/> -->
+        <img *ngIf="contentData.mimeContent.assetType === 'image'" 
+        class="company-logo" src="{{ contentData.mimeContent.assetSource }}" alt="{{ contentData.mimeContent.assetAlt }}"/>
+
+        <video *ngIf="contentData.mimeContent.assetType === 'video'" 
+        class="project_video" controls autoplay muted loop>
+            <source src="{{ contentData.mimeContent.assetSource }}">
+            Your browser doesn't support the Video Tag
+        </video>
+    </div>
+
+    <div class="description-section">
+        <div>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+        </div>
+    </div>
+    <!-- Content body -->
+    <div class="body-section">
+        <div class="row mb-3">
+            <h4>Summary</h4>
+            <p><strong>Job:</strong> {{ contentData.jobTitle }}</p>
+            <p><strong>Location:</strong> {{ contentData.location }}</p>
+            <p><strong>Length of Employment:</strong> {{ contentData.yearsExperience }}</p>
+            <p [innerText] = "description"></p>
+        </div>
+        
+        <div class="row mb-3">
+            <h5>Accomplishments</h5>
+            <ul >
+                <li *ngFor="let item of contentData.accomplishmentList">{{ item }}</li>
+            </ul>
+        </div>
+        <div class="row mb-3">
+            <h5>Tools / Technologies Used</h5>
+                <ul class="tools-list row justify-content-start" *ngFor="let rowItems of formattedToolList; let i = index">
+                    <li class="col-xs-12 col-md-{{ toolListColWidth }} tool-item" *ngFor="let item of rowItems">
+                        <img class="tool-img" src="{{ item.imageSource }}" alt="{{ item.alt }}"/>
+                    </li>
+                </ul>
+
+
+            <!-- <ul class="tools-list row justify-content-around">
+                <li class="col-xs-12 col-md-3 tool-item">
+                    <img class="tool-img" src="assets/img/bank-of-new-york-mellon-logo.png" alt="tool image"/>
+                </li>
+                <li class="col-xs-12 col-md-3 tool-item">
+                    <img class="tool-img" src="assets/img/bank-of-new-york-mellon-logo.png" alt="tool image"/>
+                </li>
+                <li class="col-xs-12 col-md-3 tool-item">
+                    <img class="tool-img" src="assets/img/bank-of-new-york-mellon-logo.png" alt="tool image"/>
+                </li>
+                <li class="col-xs-12 col-md-3 tool-item">
+                    <img class="tool-img" src="assets/img/bank-of-new-york-mellon-logo.png" alt="tool image"/>
+                </li>
+            </ul>
+            <ul class="tools-list row justify-content-around">
+                <li class="col-xs-12 col-md-3 tool-item">
+                    <img class="tool-img" src="assets/img/bank-of-new-york-mellon-logo.png" alt="tool image"/>
+                </li>
+                <li class="col-xs-12 col-md-3 tool-item">
+                    <img class="tool-img" src="assets/img/bank-of-new-york-mellon-logo.png" alt="tool image"/>
+                </li>
+                <li class="col-xs-12 col-md-3 tool-item">
+                    <img class="tool-img" src="assets/img/bank-of-new-york-mellon-logo.png" alt="tool image"/>
+                </li>
+                <li class="col-xs-12 col-md-3 tool-item">
+                    <img class="tool-img" src="assets/img/bank-of-new-york-mellon-logo.png" alt="tool image"/>
+                </li>
+            </ul> -->
+        </div>
+    </div>
+
+</div>

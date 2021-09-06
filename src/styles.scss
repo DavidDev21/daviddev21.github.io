@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+/* 
+imports fontawesome for global styles
+
+~ = is relative from the node_modules folder
+
+*/
+@import '~@fortawesome/fontawesome-free/css/fontawesome';
+
+/* Colors */
+$github-yellow-color: #F4CBB2;
+$github-black-color:#211F1F;
+$github-purple: #AD5C51;
+$fb-blue-color: #0d6efd;
+$default-red: red;
+$default-white: white;
+$background-grey: #2f2f2f;
+$text-color: #cacaca;
+
+/* sizing */
+$content-body-lg: 75%;
+$content-body-md: 70%;
+$content-body-sm: 60%;
+$page-control-gap: 3%; // gap of free space between content body and page control items (total space between arrows)
+
+.app-body {
+    background: $background-grey;
+    color: $text-color;
+    overflow-x: hidden;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+h* {
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    line-height: 1.7em;
+}

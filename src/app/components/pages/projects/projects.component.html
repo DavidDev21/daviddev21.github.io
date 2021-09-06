@@ -1,0 +1,75 @@
+<div>
+    <app-page-control
+    *ngIf="contentData !== undefined && contentData.pageControl !== undefined" 
+    prevRoute="{{ contentData.pageControl.prevRoute }}" 
+    prevRouteText="{{ contentData.pageControl.prevRouteText }}" 
+    nextRoute="{{ contentData.pageControl.nextRoute }}" 
+    nextRouteText="{{ contentData.pageControl.nextRouteText }}"></app-page-control>
+</div>
+<div *ngIf="contentData !== undefined" class="container">
+
+    <!-- Header with profile pic -->
+    <div class="header-section">
+        <div>
+            <h3>Projects</h3>
+        </div>
+    </div>
+    <div class="description-section">
+        <div>
+            <p [innerText]="pageDescription"></p>
+        </div>
+    </div>
+    <!-- Content body -->
+    <div class="body-section">
+        <nav class="nav-project-list container">
+            <div class="row justify-content-evenly p-2 mb-3" *ngFor="let rowItems of navigationItems; let i = index">
+                <div class="nav-item col-6 p-2" *ngFor="let item of rowItems">
+                    <a class="nav-anchor" routerLink="{{ item.contentUrl }}" href="{{ item.contentUrl }}">
+                        <div class="anchor-container">
+                            <div class="anchor-header">
+                                <p>{{ item.navigationItemMetadata.headerTitle }}</p>
+                            </div>
+                            <div class="anchor-body">
+                                <img class="company-logo" src="{{ item.navigationItemMetadata.imageSource }}" alt="{{ item.navigationItemMetadata.imageAlt }}"/>
+                            </div>
+                        </div>
+                        <div class="anchor-hover-container">
+                            <p>{{ item.navigationItemMetadata.hoverTitle }}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- <div class="row justify-content-evenly p-2 mb-3">
+                <div class="nav-item col-6 p-2">
+                    <a class="nav-anchor" routerLink="/experiences/detail/bnymellon" href="/experiences/detail/bnymellon">
+                        <div class="anchor-container">
+                            <div class="anchor-header">
+                                <p>Software Developer: July 2020 - Present</p>
+                            </div>
+                            <div class="anchor-body">
+                                <img class="company-logo" src="assets/img/bnym_logo.jpg" alt="Profile Pic"/>
+                            </div>
+                        </div>
+                        <div class="anchor-hover-container">
+                            <p>Bank of New York Mellon</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-item col-6 p-2">
+                    <a class="nav-anchor" href="#" target="_blank">
+                        <div class="anchor-container">
+                            <div class="anchor-header">
+                                <p>Software Developer: July 2020 - Present</p>
+                            </div>
+                            <div class="anchor-body">
+                                <img class="company-logo" src="assets/img/bnym_logo.jpg" alt="Profile Pic"/>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+            </div> -->
+        </nav>
+    </div>
+
+</div>

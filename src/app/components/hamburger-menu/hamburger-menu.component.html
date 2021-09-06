@@ -1,0 +1,33 @@
+<div class="hamburger-container">
+    <a class="hamburger-btn">
+        <i (click)="toggleBtn()" [ngClass]="isMenuOpen === true ? 'fa-times' : 'fa-bars'" class="hamburger-icon fa-3x fas "></i>
+        <!-- <i class="hamburger-icon fa-3x fas fa-times"></i> -->
+    </a>
+</div>
+
+<div class="overlay-container" [ngClass]="{'hide-menu': isMenuOpen === false}" id="hamburger-menu">
+    <nav class="overlay-menu ">
+        <div class="nav-list">
+            <div class="nav-items">
+                <a routerLink="" routerLinkActive="active" (click)="toggleBtn()">
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="nav-items">
+                <a routerLink="experiences" routerLinkActive="active" (click)="toggleBtn()">
+                    <span>Experiences</span>
+                </a>
+            </div>
+            <div class="nav-items">
+                <a routerLink="projects" routerLinkActive="active" (click)="toggleBtn()">
+                    <span>Projects</span>
+                </a>
+            </div>
+            <div class="nav-items">
+                <a routerLink="contact" routerLinkActive="active" (click)="toggleBtn()">
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>

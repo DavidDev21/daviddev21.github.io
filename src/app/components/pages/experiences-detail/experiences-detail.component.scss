@@ -1,0 +1,29 @@
+@import "src/styles.scss";
+
+.company-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.company-logo {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    // max-height: 300px;
+}
+
+.tools-list {
+    list-style-type: none;
+}
+
+.tool-item {
+    display: flex;
+    justify-content: center;
+}
+
+.tool-img {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 150px;
+}

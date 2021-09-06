@@ -1,0 +1,21 @@
+
+<nav class="nav-container">
+    <div class="nav-list">
+        <div *ngIf="this.prevRoute.length" class="nav-items arrow-left-container">
+            <a routerLink="{{ prevRoute }}" routerLinkActive="active">
+                <div class="link-content-container">
+                    <span class="control-label leftRouteText">{{ prevRouteText }}</span>
+                    <i class="arrow-icon arrow-left-icon fas fa-3x fa-chevron-left"></i>
+                </div>
+            </a>
+        </div>
+        <div *ngIf="this.nextRoute.length" class="nav-items arrow-right-container">
+            <a routerLink="{{ nextRoute }}" routerLinkActive="active">
+                <div class="link-content-container">
+                    <span class="control-label rightRouteText">{{ nextRouteText }}</span>
+                    <i class="arrow-icon arrow-right-icon fas fa-3x fa-chevron-right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,131 @@
+@import "src/styles.scss";
+
+p {
+    background-color: green;
+}
+
+.video-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url('/assets/img/typing_finger_still.png') no-repeat;
+    background-size: cover;
+    opacity: .40;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact-body {
+    display: block;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease-in;
+}
+
+.show-visible {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+.click-banner {
+    position: fixed;
+    // top: 47.5%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.test-text {
+    text-align: center;
+}
+
+.btn_hover:hover {
+    transform: scale(1.09);
+}
+
+.github {
+    color: $github-purple;
+    background-color: $github-black-color;
+}
+
+.linkedin {
+    color: $default-white;
+    background: $fb-blue-color;
+}
+
+.email {
+    background: $github-yellow-color;
+}
+
+.download {
+    color: $github-yellow-color;
+    background: $default-red;
+}
+
+a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 6px 4px;
+    transition: transform 425ms cubic-bezier(.05,.65,.18,1);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.contact-nav-item {
+    width: 110px;
+    height: 50px;
+}
+
+/*
+    Applies for screen width 1440px and below
+*/
+@media screen and (max-width: 1440px) {
+    .contact-body {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contact-body {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .contact-nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-body {
+        height: 25%;
+    }
+}

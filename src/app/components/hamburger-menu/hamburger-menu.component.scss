@@ -1,0 +1,88 @@
+@import "src/styles.scss";
+
+.overlay-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: $github-black-color;
+    z-index: 1000;
+    transition: transform 0.75s cubic-bezier(0.42, 0.0, 0.58, 1.0);
+}
+
+.hide-menu {
+    transform: translateY(-100%);
+}
+
+.overlay-menu {
+    position: fixed;
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-items {
+    height: calc(85%/4);
+}
+
+.nav-items a {
+    text-decoration: none;
+    width: 600px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.nav-items a:hover {
+    background-color: rgba(13,12,12,0.3);
+}
+
+span {
+    color: #9f9f9f;
+}
+
+/* 
+hamburger button
+*/
+
+.hamburger-container {
+    position: fixed;
+    top: 5%;
+    left: 90%;
+    z-index: 1001;
+    padding: 10px;
+}
+
+.hamburger-container:hover {
+    border-radius: 50%;
+    background-color: $github-black-color;
+}
+
+.hamburger-icon {
+    color: #9f9f9f;
+}
+
+.hamburger-btn {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+/* Applies to all widths under 768px */
+@media screen and (max-width: 768px) {
+    .hamburger-container {
+        position: fixed;
+        top: 88%;
+        left: 85%;
+        z-index: 1001;
+    }
+}
