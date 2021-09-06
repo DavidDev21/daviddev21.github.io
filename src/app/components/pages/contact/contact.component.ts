@@ -49,6 +49,7 @@ export class ContactComponent implements OnInit, OnDestroy  {
   ngOnDestroy(): void {
     this.hasUserClicked = false;
     this.isNavigationVisible = false;
+    this.renderBgVideo = false;
     this.timeoutList.forEach((timeout) => {clearTimeout(timeout);});
   }
 
@@ -59,6 +60,13 @@ export class ContactComponent implements OnInit, OnDestroy  {
       this.screenWidth = window.innerWidth;
       this.screenHeight = window.innerHeight;
       this.showBackgroundVideo();
+
+      // if we are not showing the video, just init everything. ignore typing animation
+      if(this.renderBgVideo === false) {
+        this.headerText = this.contentData["headerText"];
+        this.showContactNavigation();
+        this.hasUserClicked = true;
+      }
       // this.timeoutList.push(
       //   this.typeWriter(this.customUtilService.joinStrings(this.contentData["headerText"]) , this.typeWriterSpeed, this.typeDelay));
     });
@@ -66,7 +74,7 @@ export class ContactComponent implements OnInit, OnDestroy  {
 
   @HostListener('document:click', ['$event'])
     documentClick(event: MouseEvent) {
-      if(this.hasUserClicked === false && this.contentData["headerText"] !== undefined) {
+      if(this.hasUserClicked === false && this.renderBgVideo === true && this.contentData["headerText"] !== undefined) {
         this.hasUserClicked = true;
 
         this.timeoutList.push(
@@ -104,7 +112,11 @@ export class ContactComponent implements OnInit, OnDestroy  {
   }
 
   showContactNavigation() : void {
-    this.isNavigationVisible = !this.isNavigationVisible;
+    this.isNavigationVisible = true;
+  }
+
+  hideContactNavigation() : void {
+    this.isNavigationVisible = false;
   }
 
   showBackgroundVideo() : void {
@@ -112,6 +124,9 @@ export class ContactComponent implements OnInit, OnDestroy  {
       this.renderBgVideo = true;
     } else {
       this.renderBgVideo = false;
+      this.headerText = this.contentData["headerText"];
+      this.showContactNavigation();
+      this.hasUserClicked = true;
     }
   }
 }
