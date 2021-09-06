@@ -63,7 +63,7 @@ export class ContactComponent implements OnInit, OnDestroy  {
 
       // if we are not showing the video, just init everything. ignore typing animation
       if(this.renderBgVideo === false) {
-        this.headerText = this.contentData["headerText"];
+        this.headerText = this.customUtilService.joinStrings(this.contentData["headerText"])
         this.showContactNavigation();
         this.hasUserClicked = true;
       }
@@ -124,7 +124,9 @@ export class ContactComponent implements OnInit, OnDestroy  {
       this.renderBgVideo = true;
     } else {
       this.renderBgVideo = false;
-      this.headerText = this.contentData["headerText"];
+      if(this.contentData !== undefined && this.contentData["headerText"]){
+        this.headerText = this.customUtilService.joinStrings(this.contentData["headerText"]);
+      }
       this.showContactNavigation();
       this.hasUserClicked = true;
     }
