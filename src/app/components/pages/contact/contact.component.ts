@@ -21,6 +21,9 @@ export class ContactComponent implements OnInit, OnDestroy  {
   isNavigationVisible: boolean = false;
   contentData: any = {};
   pageData: any = {};
+  renderBgVideo: boolean = false;
+  public screenWidth: any;
+  public screenHeight: any;
 
   typeSoundFiles: string[] = ["assets/sound/keyboard-typing/keyboard-1.mp3",
   "assets/sound/keyboard-typing/keyboard-2.mp3",
@@ -53,7 +56,9 @@ export class ContactComponent implements OnInit, OnDestroy  {
     this.httpClient.get("assets/content.json").subscribe(data =>{
       this.pageData = JSON.parse(JSON.stringify(data)).pages.contact;
       this.contentData = this.pageData.contentData;
-
+      this.screenWidth = window.innerWidth;
+      this.screenHeight = window.innerHeight;
+      this.showBackgroundVideo();
       // this.timeoutList.push(
       //   this.typeWriter(this.customUtilService.joinStrings(this.contentData["headerText"]) , this.typeWriterSpeed, this.typeDelay));
     });
@@ -67,6 +72,14 @@ export class ContactComponent implements OnInit, OnDestroy  {
         this.timeoutList.push(
           this.typeWriter(this.customUtilService.joinStrings(this.contentData["headerText"]) , this.typeWriterSpeed, this.typeDelay));
       }
+    }
+
+    @HostListener('window:resize', ['$event'])
+    onResize(event: any) {
+      this.screenWidth = window.innerWidth;
+      this.screenHeight = window.innerHeight;
+      this.showBackgroundVideo();
+
     }
 
   typeWriter(inputText: string, typeWriterSpeed: number = 150, typeDelay: number = 10, typeWriterIndex: number = 0): void {
@@ -92,5 +105,13 @@ export class ContactComponent implements OnInit, OnDestroy  {
 
   showContactNavigation() : void {
     this.isNavigationVisible = !this.isNavigationVisible;
+  }
+
+  showBackgroundVideo() : void {
+    if(this.screenWidth > 425 && this.screenHeight > 640) {
+      this.renderBgVideo = true;
+    } else {
+      this.renderBgVideo = false;
+    }
   }
 }

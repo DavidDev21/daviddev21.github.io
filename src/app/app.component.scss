@@ -14,7 +14,8 @@
     display: block;
     margin: 0 auto;
     padding: 10px 0;
-    height: 90vh;
+    padding-bottom: 50px;
+    height: 100%;
     width: $content-body-lg;
 }
 
@@ -22,6 +23,9 @@
     height: 5vh;
 }
 
+.pad-bottom {
+    padding-bottom: 90px;
+}
 /* Applies to all widths under 1440px */
 @media screen and (max-width: 1440px) {
     .content-body {
