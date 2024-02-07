@@ -1,0 +1,539 @@
+{
+    "pages": {
+        "home": {
+            "pageControl" : {
+                "nextRoute" : "/experiences",
+                "nextRouteText" : "Experiences"
+            },
+            "metadata": {
+                "contentUrl": "/home"
+            },
+            "contentData": {
+                "headerText" : "Hello! My name is David Zheng",
+                "personalSummary": ["Welcome to my site!",
+                                    "",
+                                    "I am New York based Software Developer with over 3.5 years of experience, previously worked for Bank of New York Mellon on their debit card management team.",
+                                    "I graduated in 2020 from NYU, majoring in Computer Science and a minor in Mathematics.",
+                                    "I have experience using Java Spring, Angular, and also have experience working with PCI-DSS compliant applications.",
+                                    "I tend to pick things up pretty quick and like learning from new experiences.",
+                                    "Always open to new opporunities and work with others to build cool and exciting solutions",
+                                    "Feel free to explore around and learn a little more about me."],
+                "skills": ["Java",
+                    "Python",
+                    "SLDC",
+                    "git",
+                    "Spring Framework",
+                    "HTML/CSS/JS",
+                    "Agile/Scrum",
+                    "PowerBI",
+                    "PCI-DSS standards",
+                    "Dabbled in: golang, C++, C#"],
+                "courses": ["Computer Organization and Architecture",
+                    "Data Structures and Algorithms",
+                    "Design and Analysis of Algorithms",
+                    "Introduction to Database",
+                    "Introduction to Operating Systems",
+                    "Object Oriented Programming",
+                    "Parallel and Distributed Systems",
+                    "Software Engineering",
+                    "UNIX Systems Programming"],
+                "profileImg": {
+                    "imageSource": "assets/img/profile_picture.jpg",
+                    "imageAlt" : "profile pic"
+                }
+            }
+        },
+        "experiences": {
+            "pageControl" : {
+                "prevRoute" : "/home",
+                "prevRouteText" : "Home",
+                "nextRoute" : "/projects",
+                "nextRouteText" : "Projects"
+            },
+            "pageDescription" : [
+                "Ranging from small to large businesses, it lets me get a good sense and diversity of how different sizes of organizations operate.",
+                "In most development settings, I have worked under the scrum/agile workflow and am famailar working in that type of setting.",
+                "Here is a list of employers I have worked with in the past. More details found below."],
+            "metadata": {
+                "contentUrl": "/experiences"
+            },
+            "navigationItemsPerRow" : 2,
+            "navigationList" : [
+                {
+                    "contentId": "bnymellon",
+                    "contentUrl": "/experiences/detail/bnymellon",
+                    "navigationItemMetadata": {
+                        "imageSource": "assets/img/bnym_logo.png",
+                        "imageAlt" : "Bank of New York Mellon",
+                        "headerTitle" : "Software Engineer / Lead Backend Engineer - July 2020 - Jan 2024",
+                        "hoverTitle": "Bank of New York Mellon"
+                    },
+                    "contentData": {
+                        "pageTitle" : "Bank of New York Mellon - July 2020 - Jan 2024",
+                        "jobTitle" : "Software Engineer / Lead Backend Engineer (Jan 2022)", 
+                        "yearsExperience" : "3.5 years",
+                        "location" : "New York, NY",
+                        "mimeContent" : {
+                            "assetSource" : "assets/img/bank-of-new-york-mellon-logo.png",
+                            "assetAlt" : "BNY Logo",
+                            "assetType" : "image"
+                        },
+                        "description" : ["I am worked as a backend software developer on the debit card management team. We offered a suite of PCI-DSS compliant applications and API services to brokerage firms that would like to offer debit cards for their end customers. This allows customers to access extra liquidity that may be sitting unused within their brokerage accounts. We offer a portal and API solutions to brokerage firms that would like to offer a retail banking experience to their clients, which allows the user to use readily available funds from their investment accounts for their daily expenses. These accounts are diverse, ranging from traditional brokerage accounts to HSA accounts.",
+                                        "I joined the BNYM shortly after graduating and getting an return offer during my time at the organization as a summer intern. My day to day involved active development on our restful APIs and expanding our capabilities to a white label solution that the company and sell to multiple clients.",
+                                        "The team uses Java, Spring-boot, Angular, and other technologies for the portal and API. We also actively interact and work with our external partners on new features and functionalities through weekly refinement calls and sprint reviews."],
+                        "accomplishmentList" : [
+                            "Designed and implemented a tokenization solution to tokenize sensitive cardholder data to reduce PCI audit scope",
+                            "Optimized API latency by over 50%, utilized caching with Hazelcast, HTTP Connection Pooling, multithreading",
+                            "Increased performance and reliability by leading the effort to convert 67 MQ ODS requests with Fiserv to restful API services",
+                            "Reduced manual workload by 2 FTE through feature and process enhancements to back-office applications",
+                            "Developed new API services to support the integration with Microsoft Dynamics CRM, which brought elevated customer support features and efficiencies to call center representatives",
+                            "Maintained the team's business, application, and deployment context diagrams using Visio",
+                            "Implement PCI DSS-compliant features on debit card management portal and API services using Java Spring and Angular",
+                            "Migrated team's build process from Jenkins to Gitlab CI/CD and integrated internal CI/CD security scanning tool",
+                            "Resolved security vulnerabilities, such as OWASP Top 10, found by the security team and static scan tools",
+                            "Supported clients and triaged production issues during on-call rotation, maintained two nines five uptime SLA",
+                            "Created bash shell scripts to reduce tedious gitlab process’ done per development sprint, saved on average ~2.5 hours per sprint of developer time",
+                            "Integrated and developed functionalities utilizing Fiserv / First Data restful services",
+                            "Developed a shell script to automate team's routine gitlab repository management tasks per sprint. Saved 2.5 hours per sprint"
+                        ],
+                        "toolList" : [
+                            {
+                                "imageSource" : "assets/img/java_logo.png",
+                                "alt" : "Java"
+                            },
+                            {
+                                "imageSource" : "assets/img/angular_logo.png",
+                                "alt" : "Java"
+                            },
+                            {
+                                "imageSource" : "assets/img/spring_boot_logo.jpg",
+                                "alt" : "Spring Boot"
+                            },
+                            {
+                                "imageSource" : "assets/img/veracode_logo.png",
+                                "alt" : "Veracode"
+                            },
+                            {
+                                "imageSource" : "assets/img/ansible_logo.png",
+                                "alt" : "Ansible"
+                            },
+                            {
+                                "imageSource" : "assets/img/git_logo.png",
+                                "alt" : "git"
+                            },
+                            {
+                                "imageSource" : "assets/img/splunk_logo.png",
+                                "alt" : "Splunk"
+                            },
+                            {
+                                "imageSource" : "assets/img/hazelcast_logo.png",
+                                "alt" : "Hazelcast"
+                            }
+                        ],
+                        "toolsPerRow": 4
+                    }
+                },
+                {
+                    "contentId": "bnymellon-intern",
+                    "contentUrl": "/experiences/detail/bnymellon-intern",
+                    "navigationItemMetadata": {
+                        "imageSource": "assets/img/bnym_logo.png",
+                        "imageAlt" : "Bank of New York Mellon",
+                        "headerTitle" : "Summer Internship - July 2019 - August 2019",
+                        "hoverTitle": "Bank of New York Mellon"
+                    },
+                    "contentData": {
+                        "pageTitle" : "Bank of New York Mellon - July 2019 - August 2019",
+                        "jobTitle" : "Summer Analyst", 
+                        "yearsExperience" : "2 months",
+                        "location" : "New York, NY",
+                        "mimeContent" : {
+                            "assetSource" : "assets/img/bank-of-new-york-mellon-logo.png",
+                            "assetAlt" : "BNY Logo",
+                            "assetType" : "image"
+                        },
+                        "description" : ["I worked on the Treasury Modeling Platform team, developing automation scripts and creating data visualizations. I used Big Data frameworks and visualization tools such as Hadoop and PowerBI."],
+                        "accomplishmentList" : [
+                            "Created 5 PowerBI reports to make data more accessible for our end-users",
+                            "Developed bash scripts to automate metadata refresh for impala tables",
+                            "Converted an existing hive table to be in parquet format and compressed with snappy."
+                        ],
+                        "toolList" : [
+                            {
+                                "imageSource" : "assets/img/powerbi_logo.jpg",
+                                "alt" : "Power BI"
+                            },
+                            {
+                                "imageSource" : "assets/img/hadoop_logo.png",
+                                "alt" : "Hadoop"
+                            },
+                            {
+                                "imageSource" : "assets/img/bash_logo.png",
+                                "alt" : "Bash"
+                            }
+                        ],
+                        "toolsPerRow": 4
+                    }
+                },
+                {
+                    "contentId": "chairseven",
+                    "contentUrl": "/experiences/detail/chairseven",
+                    "navigationItemMetadata": {
+                        "imageSource": "assets/img/chairseven_logo.png",
+                        "imageAlt" : "Chairseven",
+                        "headerTitle" : "Summer Internship - July 2018 - August 2018",
+                        "hoverTitle": "Chairseven"
+                    },
+                    "contentData": {
+                        "pageTitle" : "Chairseven - July 2018 - August 2018",
+                        "jobTitle" : "Summer Intern", 
+                        "yearsExperience" : "2 months",
+                        "location" : "New York, NY",
+                        "mimeContent" : {
+                            "assetSource" : "assets/img/chairseven_logo.png",
+                            "assetAlt" : "Chairseven",
+                            "assetType" : "image"
+                        },
+                        "description" : ["Chairseven is an enterprise software and digital content agency. It builds custom software and technology solutions for its clients, but also acts as a consultant to determine the best tools that best satisfies the needs of the client. During my time, the team worked on web interactives for a publishing company. I learned what it is like to work in a small team and be able to wear multiple hats."],
+                        "accomplishmentList" : [
+                            "Performed QA Testing on new features completed by developers",
+                            "Modified codebase and completed Gitlab tickets for feature changes and bug fixes",
+                            "Communicated with developers on bugs and issues found during QA Testing"
+                        ],
+                        "toolList" : [
+                            {
+                                "imageSource" : "assets/img/git_logo.png",
+                                "alt" : "Git"
+                            },
+                            {
+                                "imageSource" : "assets/img/javascript_logo.png",
+                                "alt" : "Javascript"
+                            }
+                        ],
+                        "toolsPerRow": 4
+                    }
+                },
+                {
+                    "contentId": "fullstack-modular",
+                    "contentUrl": "/experiences/detail/fullstack-modular",
+                    "navigationItemMetadata": {
+                        "imageSource": "assets/img/fullstack_modular_logo.png",
+                        "imageAlt" : "fullstack-modular",
+                        "headerTitle" : "Summer Internship - July 2017 - August 2017",
+                        "hoverTitle": "Fullstack Modular"
+                    },
+                    "contentData": {
+                        "pageTitle" : "Fullstack Modular - July 2017 - August 2017",
+                        "jobTitle" : "Summer Intern", 
+                        "yearsExperience" : "2 months",
+                        "location" : "New York, NY",
+                        "mimeContent" : {
+                            "assetSource" : "assets/img/fullstack_modular_logo.png",
+                            "assetAlt" : "fullstack-modular",
+                            "assetType" : "image"
+                        },
+                        "description" : ["Fullstack Modular is a construction company that builds new buildings using modular construction. The goal is to create buildings are that cheaper, better, and stronger. I worked on various internal proof of concept projects to improve efficiency within the company, both as an individual and with a group of interns. The experience showed me how technology can be impactful to many different industries and fields beyond the tech sector."],
+                        "accomplishmentList" : [
+                            "Colloborated on a internal web platform as a central source of information for all employees (Used Drupal)",
+                            "Developed and deployed a C# Winform application to automate folder structure creation for new projects"
+                        ],
+                        "toolList" : [
+                            {
+                                "imageSource" : "assets/img/git_logo.png",
+                                "alt" : "Git"
+                            },
+                            {
+                                "imageSource" : "assets/img/csharp_logo.png",
+                                "alt" : "csharp"
+                            },
+                            {
+                                "imageSource" : "assets/img/php_logo.png",
+                                "alt" : "php"
+                            },
+                            {
+                                "imageSource" : "assets/img/drupal_logo.png",
+                                "alt" : "drupal"
+                            }
+                        ],
+                        "toolsPerRow": 4
+                    }
+                }
+            ]
+        },
+        "projects": {
+            "pageControl" : {
+                "prevRoute" : "/experiences",
+                "prevRouteText" : "Experiences",
+                "nextRoute" : "/contact",
+                "nextRouteText" : "Contacts"
+            },
+            "pageDescription" : ["Here are some projects that I have done whether in coursework and personal"],
+            "metadata": {
+                "contentUrl": "/projects"
+            },
+            "navigationItemsPerRow" : 2,
+            "navigationList" : [
+                {
+                    "contentId": "bardle",
+                    "contentUrl": "/projects/detail/bardle",
+                    "navigationItemMetadata": {
+                        "imageSource": "assets/img/bardle_logo.png",
+                        "imageAlt" : "Bardle",
+                        "headerTitle" : "Bardle",
+                        "hoverTitle": "Bardle"
+                    },
+                    "contentData": {
+                        "pageTitle" : "Bardle",
+                        "projectDate": "Sept 2022 - Dec 2022",
+                        "projectURL": "",
+                        "projectSourceURL" : "https://github.com/DavidDev21/bardle",
+                        "mimeContent" : {
+                            "assetSource" : "assets/bardle_demo.mov",
+                            "assetAlt" : "Video",
+                            "assetType" : "video"
+                        },
+                        "description" : ["Bardle is a exploratory side project inspired by the popular word game, Wordle, that took the world by storm around the same time period. Bardle explores what the game of worde would be like if it had a multiplayer aspect where players can compete to see who can complete a set of wordle words the fastests without dying out.",
+                                        "",
+                                        "This project was written in Angular for UI, NodeJS / Express for the backend, and powered by MongoDB for database storage. It uses websockets to allow for bi-directional communication between server and client",
+                                        "Bardle Frontend - https://github.com/DavidDev21/bardle",
+                                        "Bardle Backend - https://github.com/DavidDev21/bardle-api"
+                                        ],
+                        "accomplishmentList" : [
+                        ],
+                        "toolList" : [
+                            {
+                                "imageSource" : "assets/img/angular_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/nodejs_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/git_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/mongodb_logo.png",
+                                "alt" : "an Image"
+                            }
+                        ],
+                        "toolsPerRow": 4
+                    }
+                },
+                {
+                    "contentId": "shuffle",
+                    "contentUrl": "/projects/detail/shuffle",
+                    "navigationItemMetadata": {
+                        "imageSource": "assets/img/shuffle_logo.png",
+                        "imageAlt" : "shuffle",
+                        "headerTitle" : "Shuffle",
+                        "hoverTitle": "Shuffle"
+                    },
+                    "contentData": {
+                        "pageTitle" : "Shuffle",
+                        "projectDate": "Sept 2018 - May 2019",
+                        "projectURL": "",
+                        "projectSourceURL" : "https://github.com/DavidDev21/Shuffle",
+                        "mimeContent" : {
+                            "assetSource" : "assets/img/shuffle_logo.png",
+                            "assetAlt" : "Shuffle",
+                            "assetType" : "image"
+                        },
+                        "description" : ["Shuffle is a job searching platform aimed at streamlining the job application for talented applicants. It allows users to have more time looking at companies and less time filling out an application. This project was part of a two semester long course (Software Engineering CS4513/4523) where students went through the full software development life cycle and learnt about different project management tools and methods used by technology companies.",
+                                        "",
+                                        "This course entailed going from project conception, architectural design, implementation of minimal viable product (MVP), and demo. The concept of the project was to create a tinder like application for job candidates and recuriters. The job application process in general is pretty inefficient in that everyone has to submit the forms with the same information and create accounts of various isolated career portals, which creates potential privacy and security concerns for an individual. The project was hosted on heroku and accessible via the open internet."],
+                        "accomplishmentList" : [
+                        ],
+                        "toolList" : [
+                            {
+                                "imageSource" : "assets/img/vue_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/nodejs_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/postgres_logo.jpg",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/aws_logo.jpg",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/heroku_logo.jpg",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/git_logo.png",
+                                "alt" : "an Image"
+                            }
+                        ],
+                        "toolsPerRow": 4
+                    }
+                },
+                {
+                    "contentId": "gplatform",
+                    "contentUrl": "/projects/detail/gplatform",
+                    "navigationItemMetadata": {
+                        "imageSource": "assets/img/gplatform_logo.png",
+                        "imageAlt" : "GPlatform",
+                        "headerTitle" : "GPlatform",
+                        "hoverTitle": "GPlatform"
+                    },
+                    "contentData": {
+                        "pageTitle" : "GPlatform",
+                        "projectDate": "Dec 2017 - Jan 2018",
+                        "projectURL": "",
+                        "projectSourceURL" : "https://github.com/DavidDev21/GPlatform",
+                        "mimeContent" : {
+                            "assetSource" : "assets/gplatform_video.mp4",
+                            "assetAlt" : "Video",
+                            "assetType" : "video"
+                        },
+                        "description" : ["GPlatform is a 2D platformer game where the player tries to survive from falling spikes for as long as possible. The game was made using the Unity Engine as part of a self-exploration and learning project for myself. The project helped me learn about the interdisciplinary skills required to make a proper game, ranging from music production, coding, and graphic design. Although the game itself is a simple concept, it taught me more about process and the importance of staying organized throughout a project.",
+                                        "",
+                                        "This project is not hosted anywhere but the unity source code is available on github, even though it is not fully complete to the end. The core functionality is there."],
+                        "accomplishmentList" : [
+                        ],
+                        "toolList" : [
+                            {
+                                "imageSource" : "assets/img/unity_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/csharp_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/git_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/photoshop_logo.png",
+                                "alt" : "an Image"
+                            }
+                        ],
+                        "toolsPerRow": 4
+                    }
+                },
+
+                {
+                    "contentId": "portfolio-site-v2",
+                    "contentUrl": "/projects/detail/portfolio-site-v2",
+                    "navigationItemMetadata": {
+                        "imageSource": "assets/img/portfolio_site_v2_logo.PNG",
+                        "imageAlt" : "portfolio_site_v2",
+                        "headerTitle" : "Personal Site Revamp v2",
+                        "hoverTitle": "Personal Site Revamp v2"
+                    },
+                    "contentData": {
+                        "pageTitle" : "Personal Site Revamp v2",
+                        "projectDate": "August 2020",
+                        "projectURL": "https://daviddev21.github.io/portfolioSite-v2/",
+                        "projectSourceURL" : "https://github.com/DavidDev21/portfolioSite-v2/",
+                        "mimeContent" : {
+                            "assetSource" : "assets/img/portfolio_site_v2_logo.PNG",
+                            "assetAlt" : "portfolio site v2",
+                            "assetType" : "image"
+                        },
+                        "description" : ["This is the second revamp project my personal site using Angular. This was an learning experience to try to understand Angular for my current work environment. Although I do not use Angular in a professional capacity, learning the tools of my colleagues help me better understand their struggles and help me bridge the gap between the backend and frontend developers. This also marks current progress and growth of me as a developer after a year of working in a professional capacity.",
+                                        "",
+                                        "Note: the result of the revamp is what you are seeing right now."],
+                        "accomplishmentList" : [
+                        ],
+                        "toolList" : [
+                            {
+                                "imageSource" : "assets/img/angular_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/html_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/css_logo.jpg",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/typescript_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/git_logo.png",
+                                "alt" : "an Image"
+                            }
+                        ],
+                        "toolsPerRow": 4
+                    }
+                },
+                {
+                    "contentId": "portfolio-site-v1",
+                    "contentUrl": "/projects/detail/portfolio-site-v1",
+                    "navigationItemMetadata": {
+                        "imageSource": "assets/img/portfolio_site_v1_logo.PNG",
+                        "imageAlt" : "portfolio_site_v1",
+                        "headerTitle" : "Personal Site Revamp v1",
+                        "hoverTitle": "Personal Site Revamp v1"
+                    },
+                    "contentData": {
+                        "pageTitle" : "Personal Site Revamp v1 ",
+                        "projectDate": "August 2019",
+                        "projectURL": "https://daviddev21.github.io/portfolioSite/",
+                        "projectSourceURL" : "https://github.com/DavidDev21/portfolioSite/",
+                        "mimeContent" : {
+                            "assetSource" : "assets/img/portfolio_site_v1_logo.PNG",
+                            "assetAlt" : "portfolio site v1",
+                            "assetType" : "image"
+                        },
+                        "description" : ["This is the first revamp project of an old version of this site. It was a personal test to see how much I have grown as an individual and as a developer from when I first started studying Computer Science in college. I developed the new site (v2) using VueJS (frontend framework), and Vuetify (for styling and bootstrap-like features).",
+                                        "",
+                                        "Original project was written in plain html, css while following an online course. This revamp was using VueJS as a learning experience and gauge of how far I have come in terms of technical experience."],
+                        "accomplishmentList" : [
+                        ],
+                        "toolList" : [
+                            {
+                                "imageSource" : "assets/img/vue_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/html_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/css_logo.jpg",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/javascript_logo.png",
+                                "alt" : "an Image"
+                            },
+                            {
+                                "imageSource" : "assets/img/git_logo.png",
+                                "alt" : "an Image"
+                            }
+                        ],
+                        "toolsPerRow": 4
+                    }
+                }
+            ]
+        },
+        "contact": {
+            "pageControl" : {
+                "prevRoute" : "/projects",
+                "prevRouteText" : "Projects"
+            },
+            "metadata": {
+                "contentUrl": "/contact"
+            },
+            "contentData": {
+                "headerText": ["Congratulations, you have reached the end!",
+                                "Feel free to explore some more"]
+
+            }
+        }
+    },
+    "hello": "test"
+}
